@@ -16,21 +16,21 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import ap from "../images/cacho_approves.png"
-import dc from "../images/cacho_declines.png"
+import approves from "../images/cacho_approves.png"
+import declines from "../images/cacho_declines.png"
 
 
 import './src/application.scss'
 
 $(document).ready(function() {
   $('button').click(function() {
-    $(this).html(`<img src="${ap}" style="max-width: 40px;max-height: 40px;"/>`)
+    $(this).html(`<img src="${declines}" style="max-width: 40px;max-height: 40px;"/>`)
     $(this).addClass('btn-outline-danger')
     $(this).removeClass('btn-primary')
   })
 
   $('#26').click(function() {
-    $(this).html(`<img src="${dc}" style="max-width: 40px;max-height: 40px;"/>`)
+    $(this).html(`<img src="${approves}" style="max-width: 40px;max-height: 40px;"/>`)
     $(this).addClass('btn-outline-success')
     $(this).removeClass('btn-outline-danger')
     $(this).removeClass('btn-primary')
