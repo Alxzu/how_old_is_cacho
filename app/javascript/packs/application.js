@@ -46,5 +46,5 @@ $(document).ready(function() {
 })
 
 document.addEventListener('turbolinks:load', function() {
-  gtag('config', '113447155018812993331')
+  gtag('config', 'UA-156013346-1')
 });
