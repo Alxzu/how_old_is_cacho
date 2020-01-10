@@ -44,3 +44,7 @@ $(document).ready(function() {
     $(this).removeClass('btn-primary')
   })
 })
+
+document.addEventListener('turbolinks:load', function() {
+  gtag('config', '113447155018812993331')
+});
