@@ -16,3 +16,18 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import './src/application.scss'
+
+$(document).ready(function() {
+  $('button').click(function() {
+    $(this).html('<img src="/assets/cacho_declines.png" style="max-width: 40px;max-height: 40px;"/>')
+    $(this).addClass('btn-outline-danger')
+    $(this).removeClass('btn-primary')
+  })
+
+  $('#26').click(function() {
+    $(this).html('<img src="/assets/cacho_approves.png" style="max-width: 50px;max-height: 50px;"/>')
+    $(this).addClass('btn-outline-success')
+    $(this).removeClass('btn-outline-danger')
+    $(this).removeClass('btn-primary')
+  })
+})
