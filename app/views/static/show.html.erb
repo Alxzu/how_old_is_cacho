@@ -1,13 +1,13 @@
 <h1 class='text-center'>How Old Is Cacho ???</h1>
 
 <div class='text-center'>
-  <img src=<%= asset_path('cachin.png') %> style='max-height: 500px;'>
+  <img src=<%= asset_path('cachin.png') %> style='height: 70vh;'>
 </div>
 
 </br>
 
-<div class='text-center'>
+<div class='container text-center'>
   <% (20..40).each do |i| %>
-    <button id=<%= i %> type="button" class="btn btn-primary"><%= i %></button>
+    <button id=<%= i %> type="button" class="btn btn-primary m-2"><%= i %></button>
   <% end %>
 </div>
