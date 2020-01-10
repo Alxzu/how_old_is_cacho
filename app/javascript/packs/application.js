@@ -16,8 +16,8 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import approves from "../images/cacho_approves.png"
-import declines from "../images/cacho_declines.png"
+import approves from "../images/cacho_approves.jpg"
+import declines from "../images/cacho_declines.jpg"
 
 
 import './src/application.scss'
