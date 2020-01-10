@@ -22,6 +22,12 @@ import declines from "../images/cacho_declines.jpg"
 
 import './src/application.scss'
 
+const _calculateAge = (birthday) => { // birthday is a date
+  var ageDifMs = Date.now() - birthday.getTime();
+  var ageDate = new Date(ageDifMs); // miliseconds from epoch
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
 $(document).ready(function() {
   $('button').click(function() {
     $(this).html(`<img src="${declines}" style="max-width: 40px;max-height: 40px;"/>`)
@@ -29,7 +35,9 @@ $(document).ready(function() {
     $(this).removeClass('btn-primary')
   })
 
-  $('#26').click(function() {
+  var years = _calculateAge(new Date('12/17/1993'))
+
+  $(`#${years}`).click(function() {
     $(this).html(`<img src="${approves}" style="max-width: 40px;max-height: 40px;"/>`)
     $(this).addClass('btn-outline-success')
     $(this).removeClass('btn-outline-danger')
